@@ -9,6 +9,8 @@ public class DialogTurnNode : MonoBehaviour, IHistoryNode
     [SerializeField] string characterName;
     [SerializeField] DialogTurnNode nextDialogNode;
     [SerializeField] OptionsList nextControlNode;
+    [SerializeField] BasketGame nextControlNodeBasketGame;
+    [SerializeField] BackgroundSituation nextSituationNode;
     IHistoryNode nextNode;
     DialogManager dialogManager;
     bool finalized;
@@ -22,6 +24,14 @@ public class DialogTurnNode : MonoBehaviour, IHistoryNode
         else if (nextControlNode != null)
         {
             nextNode = nextControlNode;
+        }
+        else if (nextControlNodeBasketGame != null)
+        {
+            nextNode = nextControlNodeBasketGame;
+        }
+        else if (nextSituationNode != null)
+        {
+            nextNode = nextSituationNode;
         }
     }
 
@@ -38,11 +48,6 @@ public class DialogTurnNode : MonoBehaviour, IHistoryNode
     public string GetCharacterName()
     {
         return characterName;
-    }
-
-    public NodeTypes GetNodeType()
-    {
-        return NodeTypes.dialog;
     }
 
     public void Execute()

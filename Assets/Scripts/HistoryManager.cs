@@ -6,14 +6,14 @@ using Doublsb.Dialog;
 
 public class HistoryManager : MonoBehaviour
 {
-    [SerializeField] DialogTurnNode currentdialog;
+    [SerializeField] BackgroundSituation initialNode;
     IHistoryNode currentNode;
     [SerializeField] DialogManager DialogManager;
     [SerializeField] string characterNameA, characterNameB;
 
     void Start()
     {
-        currentNode = (IHistoryNode) currentdialog;
+        currentNode = (IHistoryNode) initialNode;
         ExecuteNode(currentNode);
     }
 

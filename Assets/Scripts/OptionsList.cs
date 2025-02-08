@@ -14,11 +14,6 @@ public class OptionsList : MonoBehaviour, IHistoryNode, IFlowControl
         return currentNextNode;
     }
 
-    public NodeTypes GetNodeType()
-    {
-        return NodeTypes.control;
-    }
-
     public void SelectNextNode(int nodeIndex)
     {
         currentNextNode = nextNodes[nodeIndex];
