@@ -10,7 +10,7 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
     bool finalized;
     [SerializeField] int numberOfAttemptsLimit;
     int currentNumberOfAttemps = 0, goals;
-    float holderStopDistance = 0.3f;
+    float holderStopDistance = 0.7f;
     [SerializeField] Animator ballAnimator;
     bool moveRigth, enableThrow;
     [SerializeField] GameObject ballHolder, stopPointLeft, stopPointRigth, visual;
@@ -96,11 +96,11 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
             }
             if (moveRigth)
             {
-                ballHolder.transform.position = Vector2.Lerp(ballHolder.transform.position, stopPointRigth.transform.position, 0.01f);
+                ballHolder.transform.position = Vector2.Lerp(ballHolder.transform.position, stopPointRigth.transform.position, 0.007f);
             }
             else
             {
-                ballHolder.transform.position = Vector2.Lerp(ballHolder.transform.position, stopPointLeft.transform.position, 0.01f);
+                ballHolder.transform.position = Vector2.Lerp(ballHolder.transform.position, stopPointLeft.transform.position, 0.007f);
             }
             yield return new WaitForSeconds(0.01f);
         }
