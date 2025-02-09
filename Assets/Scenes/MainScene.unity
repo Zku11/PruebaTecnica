@@ -737,6 +737,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
+      propertyPath: nextSituationNode
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
+        type: 3}
       propertyPath: dialogLines.Array.size
       value: 1
       objectReference: {fileID: 0}
