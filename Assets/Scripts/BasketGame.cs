@@ -51,6 +51,8 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
     {
         if (enableThrow)
         {
+            enableThrow = false;
+            StartCoroutine("EnableThrowDelay");
             ballAnimator.SetTrigger("throwBall");
             StopCoroutine("HolderMovement");
             StartCoroutine("RestartBall");
@@ -67,6 +69,12 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
                 }
             }
         }
+    }
+
+    IEnumerator EnableThrowDelay()
+    {
+        yield return new WaitForSeconds(2.5f);
+        enableThrow = true;
     }
 
     IEnumerator FinalizeDelay()

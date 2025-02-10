@@ -4,7 +4,7 @@ using UnityEngine;
 using Doublsb.Dialog;
 
 
-public class HistoryManager : MonoBehaviour
+public class HistoryManager : MonoBehaviour//Execute the different nodes of which the story is made up
 {
     [SerializeField] BackgroundSituation initialNode;
     IHistoryNode currentNode;

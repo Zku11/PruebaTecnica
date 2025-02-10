@@ -8,7 +8,7 @@ using UnityEngine;
 */
 public interface IHistoryNode
 {
-    IHistoryNode NextNode();
     void Execute();
     bool Finalized();
+    IHistoryNode NextNode();
 }
