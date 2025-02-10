@@ -8,7 +8,7 @@ using UnityEngine;
 */
 public interface IHistoryNode
 {
-    void Execute();
-    bool Finalized();
-    IHistoryNode NextNode();
+    void Execute();//run the node
+    bool Finalized();//returns "true" if the node has finished its tasks
+    IHistoryNode NextNode();//we get the next node from the current node
 }

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Doublsb.Dialog;
 
+/*
+ * 
+ */
+
 public class DialogTurnNode : MonoBehaviour, IHistoryNode
 {
     [SerializeField] string [] dialogLines;

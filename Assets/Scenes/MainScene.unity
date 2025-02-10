@@ -992,7 +992,7 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: "[Recuerdas una deuda que ten\xEDas con tu amigo]"
+      value: "[Recuerdas un asunto pendiente que ten\xEDas con tu amigo]"
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -1236,16 +1236,21 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: "Esta semana te pagar\xE9 lo que te debo, no me he olvidado"
+      value: "\xBFRecuerdas qu\xE9 te deb\xEDa dinero?"
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[1]
+      value: "Esta semana te pagar\xE9 lo que te debo, no me he olvidado"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
+        type: 3}
+      propertyPath: dialogLines.Array.data[2]
       value: Nos vemos
       objectReference: {fileID: 0}
     - target: {fileID: 3779622199525250922, guid: dded030d8ac50224283d401eaa04c022,
@@ -2385,7 +2390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377122549}
   m_Layer: 0
-  m_Name: HistorySituations(backgrounds, etc)
+  m_Name: HistorySituations (backgrounds, etc)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3637,17 +3642,17 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: Entonces tengo que irme a conseguir ese deinero
+      value: Entonces tengo que irme a conseguir ese dinero
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[1]
-      value: Toc toc
+      value: Hasta luego
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -5024,7 +5029,7 @@ RectTransform:
   m_GameObject: {fileID: 1064540730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.87811553, y: 0.87811553, z: 0.87811553}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1357478661}
@@ -5037,7 +5042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -201.4}
+  m_AnchoredPosition: {x: -0.609375, y: -196.05}
   m_SizeDelta: {x: -40, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1066470967
@@ -5130,12 +5135,12 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: Esto no esta tan mal
+      value: "/emote:Happy/\xA1Gan\xE9!"
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[1]
-      value: Pero prefiero jugar en la consola
+      value: Aunque prefiero jugar en la consola
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -5146,7 +5151,7 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[3]
-      value: Aunque le debo dinero a mi amigo y no quiero ir sin nada para pagarle
+      value: Aunque le debo dinero y no quiero ir sin nada para pagarle
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -5349,12 +5354,12 @@ PrefabInstance:
     - target: {fileID: 1796806250265629445, guid: 0aed772100707544a915a1e74a644524,
         type: 3}
       propertyPath: optionsText.Array.data[0]
-      value: No hablar de la deuda e irse
+      value: No hablar e irse
       objectReference: {fileID: 0}
     - target: {fileID: 1796806250265629445, guid: 0aed772100707544a915a1e74a644524,
         type: 3}
       propertyPath: optionsText.Array.data[1]
-      value: "\xBFRecuerdas que te deb\xEDa dinero?"
+      value: "\xBFRecuerdas que...?"
       objectReference: {fileID: 0}
     - target: {fileID: 1796806250265629445, guid: 0aed772100707544a915a1e74a644524,
         type: 3}
@@ -7085,7 +7090,7 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[1]
-      value: "\xBFQuires que juguemos a alg\xFAn videojuego un rato?"
+      value: "\xBFQuieres que juguemos a alg\xFAn videojuego un rato?"
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -7571,7 +7576,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 21300000, guid: 911bf2da09ad4954da2298166bb2cd66,
+        type: 3}
     - target: {fileID: 8206358605457009698, guid: b1e781a67c6f97f4d9cfb50a61f30655,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7748,7 +7754,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 21300000, guid: 911bf2da09ad4954da2298166bb2cd66,
+        type: 3}
     - target: {fileID: 8206358605457009698, guid: b1e781a67c6f97f4d9cfb50a61f30655,
         type: 3}
       propertyPath: m_Pivot.x
@@ -8676,7 +8683,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogLines.Array.data[0]
       value: "/emote:Happy/\xA1Podemos irnos al fin!, /emote:Normal/que larga se
-        hizo la espera"
+        hizo la clase"
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -10637,6 +10644,26 @@ PrefabInstance:
       objectReference: {fileID: 352199044}
     - target: {fileID: 7588140566912030656, guid: b0170fb1836ce1449a2fe96a4ae4b883,
         type: 3}
+      propertyPath: badReactionMessage
+      value: "/emote:Sad/Que mala punter\xEDa, no veo bien en la oscuridad/emote:Normal/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588140566912030656, guid: b0170fb1836ce1449a2fe96a4ae4b883,
+        type: 3}
+      propertyPath: goodReactionMessage
+      value: "/size:up/\xA1Bien!, soy el mejor/emote:Happy/"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588140566912030656, guid: b0170fb1836ce1449a2fe96a4ae4b883,
+        type: 3}
+      propertyPath: numberOfAttemptsLimit
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588140566912030656, guid: b0170fb1836ce1449a2fe96a4ae4b883,
+        type: 3}
+      propertyPath: neutralReactionMessage
+      value: Seguimos empatados
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588140566912030656, guid: b0170fb1836ce1449a2fe96a4ae4b883,
+        type: 3}
       propertyPath: nextNodes.Array.data[0]
       value: 
       objectReference: {fileID: 1066470968}
@@ -10668,7 +10695,7 @@ PrefabInstance:
     - target: {fileID: 7588140566912030659, guid: b0170fb1836ce1449a2fe96a4ae4b883,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -195
+      value: -195.24
       objectReference: {fileID: 0}
     - target: {fileID: 7588140566912030659, guid: b0170fb1836ce1449a2fe96a4ae4b883,
         type: 3}
@@ -10709,6 +10736,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651925891436677574, guid: b0170fb1836ce1449a2fe96a4ae4b883,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0170fb1836ce1449a2fe96a4ae4b883, type: 3}

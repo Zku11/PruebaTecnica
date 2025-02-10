@@ -7,5 +7,5 @@ using UnityEngine;
  */
 public interface IFlowControl
 {
-    void SelectNextNode(int nodeIndex);
+    void SelectNextNode(int nodeIndex);//From an internal list of nodes we choose one, according to the logic of the flow controller
 }
