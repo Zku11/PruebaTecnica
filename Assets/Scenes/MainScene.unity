@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102109274}
   m_Layer: 0
-  m_Name: --separator-- end 3
+  m_Name: --separator-- end 3 (regular)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,7 +249,6 @@ GameObject:
   m_Component:
   - component: {fileID: 119526374}
   - component: {fileID: 119526376}
-  - component: {fileID: 119526375}
   m_Layer: 0
   m_Name: backGround (2)
   m_TagString: Untagged
@@ -272,26 +271,6 @@ Transform:
   m_Father: {fileID: 1986157907}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!95 &119526375
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119526373}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8e9c3694bbac1c04787cac84ac3a53ef, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &119526376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -782,7 +761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153491641}
   m_Layer: 0
-  m_Name: --separator-- end 2
+  m_Name: --separator-- end 2 (good)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2679,7 +2658,7 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: He encontrado mucho dinero
+      value: He encontrado mucho dinero/emote:Happy/
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -3179,12 +3158,12 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: Gracias
+      value: /emote:Happy/Gracias
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[1]
-      value: "Podremos jugar y adem\xE1s te pagu\xE9 la deuda"
+      value: "/emote:Happy/Podremos jugar y adem\xE1s te pagu\xE9 la deuda"
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -3449,7 +3428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627711858}
   m_Layer: 0
-  m_Name: --separator-- no cash options
+  m_Name: --separator-- no cash options & lose game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3958,7 +3937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 692744383}
   m_Layer: 0
-  m_Name: --separator-- end 1
+  m_Name: --separator-- end 1 (bad)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4193,6 +4172,90 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 194140664}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &851243758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851243759}
+  - component: {fileID: 851243761}
+  m_Layer: 0
+  m_Name: backGround (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &851243759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851243758}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.13}
+  m_LocalScale: {x: 1.4179324, y: 1.4179324, z: 1.4179324}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1762897345}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &851243761
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851243758}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -79
+  m_Sprite: {fileID: 21300000, guid: cdd462abd453053419a990cea66008bb, type: 3}
+  m_Color: {r: 0.23908864, g: 0.26931366, b: 0.4339623, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12.8, y: 9.6}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &879177670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4224,7 +4287,7 @@ Transform:
   m_Children:
   - {fileID: 630093018}
   m_Father: {fileID: 1762897345}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &879177672
 Animator:
@@ -4883,7 +4946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 976449294}
   m_Layer: 0
-  m_Name: --separator--
+  m_Name: --separator-- at the friend's house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5104,141 +5167,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &1061749937
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1064540731}
-    m_Modifications:
-    - target: {fileID: 4220710462281950255, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_Name
-      value: DialogOption (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950255, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690752791682269908, guid: f86da7532aa184b4d8c24856cef3c24b,
-        type: 3}
-      propertyPath: optionIndex
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f86da7532aa184b4d8c24856cef3c24b, type: 3}
---- !u!224 &1061749938 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4220710462281950416, guid: f86da7532aa184b4d8c24856cef3c24b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1061749937}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1064540730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5271,7 +5199,6 @@ RectTransform:
   - {fileID: 194140665}
   - {fileID: 1437294254}
   - {fileID: 2053780726}
-  - {fileID: 1061749938}
   m_Father: {fileID: 1916777259}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5386,7 +5313,7 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[3]
-      value: Aunque le debo dinero y no quiero ir sin nada para pagarle
+      value: /emote:Sad/Aunque le debo dinero y no quiero ir sin nada para pagarle
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -7330,7 +7257,7 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[2]
-      value: En mi casa se ha cortado la luz y no puedo jugar
+      value: /emote:Sad/En mi casa se ha cortado la luz y no puedo jugar
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -8926,6 +8853,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 851243759}
   - {fileID: 879177671}
   m_Father: {fileID: 377122549}
   m_RootOrder: 5
@@ -9146,7 +9074,7 @@ MonoBehaviour:
 
 
 
-    Press R to replay'
+    Presiona R para rejugar y conseguir otro final'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9401,7 +9329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1887942474}
   m_Layer: 0
-  m_Name: --separator--
+  m_Name: --separator-- at the friend's house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9431,7 +9359,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 976536517, guid: 8d5221fdde34c89498bf5c2e5db4352c, type: 3}
       propertyPath: FinalizeTime
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 976536517, guid: 8d5221fdde34c89498bf5c2e5db4352c, type: 3}
       propertyPath: nextDialogNode
@@ -9675,14 +9603,7 @@ MonoBehaviour:
   - {fileID: 816826770}
   - {fileID: 1559438472}
   - {fileID: 1513151190}
-  - {fileID: 1939847430}
   displayPanel: {fileID: 1064540730}
---- !u!1 &1939847430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4220710462281950255, guid: f86da7532aa184b4d8c24856cef3c24b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1061749937}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1964455924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10220,7 +10141,7 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: Odio hacer esto, que aburrido
+      value: /emote:Sad/Odio hacer esto, que aburrido
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -10230,7 +10151,8 @@ PrefabInstance:
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
       propertyPath: dialogLines.Array.data[2]
-      value: Aunque le debo dinero a mi amigo y no quiero ir sin nada para pagarle
+      value: /emote:Sad/Aunque le debo dinero a mi amigo y no quiero ir sin nada
+        para pagarle
       objectReference: {fileID: 0}
     - target: {fileID: 1604703909909979201, guid: dded030d8ac50224283d401eaa04c022,
         type: 3}
@@ -10528,7 +10450,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 976536517, guid: 8d5221fdde34c89498bf5c2e5db4352c, type: 3}
       propertyPath: FinalizeTime
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 976536517, guid: 8d5221fdde34c89498bf5c2e5db4352c, type: 3}
       propertyPath: nextDialogNode

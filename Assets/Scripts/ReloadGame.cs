@@ -7,7 +7,7 @@ public class ReloadGame : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))//Restart the whole game
         {
             SceneManager.LoadScene("MainScene");
         }

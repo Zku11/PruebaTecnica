@@ -9,10 +9,6 @@ public class OptionsList : MonoBehaviour, IHistoryNode, IFlowControl
     bool finalized;
     [SerializeField] string[] optionsText;
 
-    public IHistoryNode NextNode()
-    {
-        return currentNextNode;
-    }
 
     public void SelectNextNode(int nodeIndex)
     {
@@ -29,5 +25,10 @@ public class OptionsList : MonoBehaviour, IHistoryNode, IFlowControl
     public bool Finalized()
     {
         return finalized;
+    }
+
+    public IHistoryNode NextNode()
+    {
+        return currentNextNode;
     }
 }

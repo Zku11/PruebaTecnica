@@ -4,7 +4,7 @@ using UnityEngine;
 using Doublsb.Dialog;
 
 /*
- * 
+ * This script shows normal dialogs
  */
 
 public class DialogTurnNode : MonoBehaviour, IHistoryNode
@@ -39,21 +39,6 @@ public class DialogTurnNode : MonoBehaviour, IHistoryNode
         }
     }
 
-    public IHistoryNode NextNode()
-    {
-        return nextNode;
-    }
-
-    public string[] GetDialogLines()
-    {
-        return dialogLines;
-    }
-
-    public string GetCharacterName()
-    {
-        return characterName;
-    }
-
     public void Execute()
     {
         finalized = false;
@@ -71,11 +56,26 @@ public class DialogTurnNode : MonoBehaviour, IHistoryNode
                 };
             }
         }
-        dialogManager.Show(dialogTexts);
+        dialogManager.Show(dialogTexts);//we show the lines of dialogue
     }
 
     public bool Finalized()
     {
         return finalized;
     }
+
+    public IHistoryNode NextNode()
+    {
+        return nextNode;
+    }
+
+    /*public string[] GetDialogLines()
+    {
+        return dialogLines;
+    }
+
+    public string GetCharacterName()
+    {
+        return characterName;
+    }*/
 }

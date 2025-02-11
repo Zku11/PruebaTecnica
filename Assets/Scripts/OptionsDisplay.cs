@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script shows the current dialog options in the UI
+ */
+
 public class OptionsDisplay : MonoBehaviour
 {
     [SerializeField] GameObject[] buttons;
     [SerializeField] GameObject displayPanel;
     static OptionsDisplay instance;
     OptionsList optionReceiver;
+
 
     void Awake()
     {
@@ -19,6 +24,7 @@ public class OptionsDisplay : MonoBehaviour
         return instance;
     }
 
+    //shows the indicated options and the receiver of the event when pressing an option
     public void ShowOptions(OptionsList optionReceiver, string[] options)
     {
         this.optionReceiver = optionReceiver;
@@ -31,7 +37,7 @@ public class OptionsDisplay : MonoBehaviour
         displayPanel.SetActive(true);
     }
 
-    void UnableOptions()
+    void UnableOptions()//hide all previous options
     {
         foreach (GameObject gameObject in buttons)
         {

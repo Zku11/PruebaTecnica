@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+this script shows background situations such as the landscape during dusk
+ */
+
 public class BackgroundSituation : MonoBehaviour, IHistoryNode
 {
     [SerializeField] DialogTurnNode nextDialogNode;
@@ -10,7 +14,13 @@ public class BackgroundSituation : MonoBehaviour, IHistoryNode
     IHistoryNode nextNode;
     [SerializeField] GameObject backgroundPanel;
     bool finalized;
-    [SerializeField] float FinalizeTime; 
+    [SerializeField] float FinalizeTime;
+    static List<BackgroundSituation> situationsList;
+
+    void Awake()
+    {
+        situationsList = new List<BackgroundSituation>();
+    }
 
     void Start()
     {
@@ -22,19 +32,16 @@ public class BackgroundSituation : MonoBehaviour, IHistoryNode
         {
             nextNode = nextControlNode;
         }
-        else if (nextControlNodeBasketGame)
+        else if (nextControlNodeBasketGame != null)
         {
             nextNode = nextControlNodeBasketGame;
         }
-    }
-
-    public IHistoryNode NextNode()
-    {
-        return nextNode;
+        situationsList.Add(this);
     }
 
     public void Execute()
     {
+        HideAll();
         finalized = false;
         backgroundPanel.SetActive(true);
         StartCoroutine("FinalizeDelay");
@@ -45,9 +52,22 @@ public class BackgroundSituation : MonoBehaviour, IHistoryNode
         return finalized;
     }
 
-    IEnumerator FinalizeDelay()
+    public IHistoryNode NextNode()
+    {
+        return nextNode;
+    }
+
+    IEnumerator FinalizeDelay()//is a delay time before moving to the next node
     {
         yield return new WaitForSeconds(FinalizeTime);
         finalized = true;
+    }
+
+    void HideAll()//hide all previous backgrounds
+    {
+        foreach (BackgroundSituation backgroundSituation in situationsList)
+        {
+            backgroundSituation.backgroundPanel.SetActive(false);
+        }
     }
 }

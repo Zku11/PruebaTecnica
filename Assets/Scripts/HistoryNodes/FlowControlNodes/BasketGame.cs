@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Doublsb.Dialog;
 
+/*
+ This script controls the mini game
+ */
+
 public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
 {
     [SerializeField] DialogTurnNode[] nextNodes;
@@ -18,20 +22,6 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
     [SerializeField] string goodReactionMessage, badReactionMessage, neutralReactionMessage;
     [SerializeField] float holderSpeed;
     
-
-    public IHistoryNode NextNode()
-    {
-        return currentNextNode;
-    }
-
-    public void SelectNextNode(int nodeIndex)
-    {
-        StopCoroutine("HolderMovement");
-        StopCoroutine("RestartBall");
-        currentNextNode = nextNodes[nodeIndex];
-        enableThrow = false;
-        StartCoroutine("FinalizeDelay");
-    }
 
     public void Execute()
     {
@@ -49,6 +39,20 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
         return finalized;
     }
 
+    public IHistoryNode NextNode()
+    {
+        return currentNextNode;
+    }
+
+    public void SelectNextNode(int nodeIndex)//Select the next node based on the result of the mini game
+    {
+        StopCoroutine("HolderMovement");
+        StopCoroutine("RestartHolder");
+        currentNextNode = nextNodes[nodeIndex];
+        enableThrow = false;
+        StartCoroutine("FinalizeDelay");
+    }
+
     public void ThrowBall()//throw the paper ball
     {
         if (enableThrow)
@@ -57,25 +61,14 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
             StartCoroutine("EnableThrowDelay");
             ballAnimator.SetTrigger("throwBall");
             StopCoroutine("HolderMovement");
-            StartCoroutine("RestartBall");
+            StartCoroutine("RestartHolder");
             currentNumberOfAttemps++;
-            if (currentNumberOfAttemps == numberOfAttemptsLimit)
-            {
-                if (goals > numberOfAttemptsLimit - goals)
-                {
-                    SelectNextNode(0);
-                }
-                else
-                {
-                    SelectNextNode(1);
-                }
-            }
         }
     }
 
-    IEnumerator EnableThrowDelay()//It is a small waiting time between each launch
+    IEnumerator EnableThrowDelay()//It is a small waiting time between each launch, show player reaction and game results
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.5f);
         enableThrow = true;
         if ((currentNumberOfAttemps % 2 == 0))
         {
@@ -92,6 +85,17 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
                 PlayerMessage(neutralReactionMessage);
             }
         }
+        if (currentNumberOfAttemps == numberOfAttemptsLimit)
+        {
+            if (goals > numberOfAttemptsLimit - goals)
+            {
+                SelectNextNode(0);
+            }
+            else
+            {
+                SelectNextNode(1);
+            }
+        }
     }
 
     IEnumerator FinalizeDelay()//It is a short waiting time after finishing the mini-game.
@@ -101,7 +105,7 @@ public class BasketGame : MonoBehaviour, IHistoryNode, IFlowControl
         finalized = true;
     }
 
-    IEnumerator RestartBall()//place a new paper ball in your hand
+    IEnumerator RestartHolder()//resume the hand movement with delay
     {
         yield return new WaitForSeconds(2f);
         StartCoroutine("HolderMovement");
